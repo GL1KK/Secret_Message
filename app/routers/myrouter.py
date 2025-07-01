@@ -20,4 +20,4 @@ class Router:
         try:
             return self.all_sms.pop(sms_id)
         except KeyError:
-            raise HTTPException(status_code=404, detail="Сообщение уже было открыто!")
+            raise HTTPException(status_code=404, detail="Message has already been viewed!")
