@@ -46,6 +46,7 @@ For repeated requests to the same `sms_id`:
    git clone https://github.com/GL1KK/Secret_Message.git
    cd Secret_Message
    pip install poetry
+   poetry shell
    poetry install
    cd app
    uvicorn main:app --reload
