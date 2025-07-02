@@ -31,23 +31,9 @@ Parameters:
 Response:
 - JSON object with fields:
   - `name`: Sender name
-  - `sms`: Message text
+  - `sms`: Message text8u
 
 After successful retrieval, the message is deleted from the system.
 
 For repeated requests to the same `sms_id`:
 - Returns 404 error with message "Message has already been viewed!"
-
-## Installation and Setup
-
-1. Ensure you have Python 3.7+ and Poetry installed
-2. Clone the repository and install dependencies:
-   ```bash
-   git clone https://github.com/GL1KK/Secret_Message.git
-   cd Secret_Message
-   pip install poetry
-   poetry shell
-   poetry install
-   cd app
-   uvicorn main:app --reload
-   ```
